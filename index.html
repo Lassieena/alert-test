@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>アラート無限ループ処理</title>
+    <style>
+        body {
+            background-image: url('haikei.jpg');
+            background-size:cover;
+        }
+    </style>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <script>
+    setInterval(() => {
+        swal("これはテストです", "無限ループのバグについてのテスト", "error");
+    }, 3000);
+    </script>
+</body>
+</html>
